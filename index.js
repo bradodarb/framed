@@ -16,15 +16,7 @@ server.use(restify.bodyParser({
 
 var frameController = new frames.frameAPI(server, config.framesApi);
 
-
-
 console.log(frameController);
-
-
-
-var validate = require('jsonschema').validate;
-console.log(validate(4, {"type": "number"}));
-
 
 server.listen(8083);
 
