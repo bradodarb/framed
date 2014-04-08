@@ -1,0 +1,15 @@
+{
+  "name": "framed",
+  "version": "0.0.0",
+  "description": "frame builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brad Murry",
+  "license": "BSD",
+  "dependencies": {
+    "restify": "~2.7.0",
+    "mongodb": "~1.4.0"
+  }
+}
