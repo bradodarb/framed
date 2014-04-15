@@ -1,6 +1,14 @@
 module.exports = {
 
-
+    server:{
+        port:8083,
+        bodyParams:{
+            maxBodySize: 0,
+            mapParams: true,
+            mapFiles: false,
+            overrideParams: false
+        }
+    },
     framesApi:{
 
         baseUrl: '/api/',

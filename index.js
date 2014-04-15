@@ -1,22 +1,19 @@
-var frames = require('framed-api');
 var config = require('./config');
-
-
+var framed = require('framed-api');
 var restify = require('restify');
 
+
+
 var server = restify.createServer();
-
-server.use(restify.bodyParser({
-    maxBodySize: 0,
-    mapParams: true,
-    mapFiles: false,
-    overrideParams: false
-}));
+server.use(restify.bodyParser(config.server.bodyParams));
 
 
-var frameController = new frames.frameAPI(server, config.framesApi);
-
+var frameController = new framed.frameAPI(server, config.framesApi);
 console.log(frameController);
 
-server.listen(8083);
 
+
+
+
+
+server.listen(config.server.port);
