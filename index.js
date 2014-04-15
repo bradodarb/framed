@@ -8,7 +8,7 @@ var server = restify.createServer();
 server.use(restify.bodyParser(config.server.bodyParams));
 
 
-var frameController = new framed.frameAPI(server, config.framesApi);
+var frameController = framed.frameAPI(server, config.framesApi);
 console.log(frameController);
 
 
